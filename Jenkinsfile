@@ -12,9 +12,9 @@ node {
 
   // ------------------------------- Define Variables ------------------------------------------------
     SPRING_APP = "spring-music-app"
-    APPLICATION_NAME = "${BUILD_USER_FIRST_NAME}-${SPRING_APP}"
+    APPLICATION_NAME = "${mike_w}-${SPRING_APP}"
     DEPLOY_SPACE = "Development"
-    PCF_ORG = "my_first_workshop"
+    PCF_ORG = "mw-org"
     ARTIFACT_URL = "http://3.17.145.188:8081/artifactory/chicago-workshop/"
     SONARQUBE_ENDPOINT = "http://18.188.152.100:9000"
     PCF_ENDPOINT = "https://api.run.pivotal.io"
@@ -30,7 +30,7 @@ node {
       ],
       [
       $class          : 'UsernamePasswordMultiBinding',
-      credentialsId   : 'abdel_pcf_user',
+      credentialsId   : 'mwjenks_pcf_user',
       passwordVariable: 'PCF_PASSWORD',
       usernameVariable: 'PCF_USERNAME'
       ],[
